@@ -27,7 +27,6 @@
 | **ODS conectados** | **ODS 11** (Cidades e Comunidades Sustentáveis) e **ODS 9** (Indústria, Inovação e Infraestrutura) |
 
 
-
 ## 🛠️ 1. Tecnologias Utilizadas
 > *Principais tecnologias, frameworks e bibliotecas que dão suporte à arquitetura, persistência e segurança do sistema.*
 
@@ -39,29 +38,21 @@
 * **Maven** – Gerenciamento de dependências e automação de *build*.
 
 
-
 ## ⚙️ 2. Configuração e Instalação
 > *Pré-requisitos e instruções passo a passo para colocar a aplicação em funcionamento localmente.*
 
-### **2.1. Pré-requisitos**
-* **Java 21** instalado e configurado nas variáveis de ambiente (`JAVA_HOME`).
-* **Git** instalado para clonar o repositório.
-
-### **2.2. Passos para Execução**
-
-**1.** Clonar o repositório:
+### 2.1. Clone o repositório
    ```bash
 git clone [https://github.com/MAJE-Dev/zeladoria-api-soa.git](https://github.com/MAJE-Dev/zeladoria-api-soa.git)
    ```
 
-**2.** Executar a aplicação:
+### 2.2 Execute a aplicação
 Utilize o Maven Wrapper (mvnw) incluído no projeto para iniciar o Spring Boot:
    ```bash
 ./mvnw spring-boot:run
    ```
 
 (Se estiver utilizando Windows no *Prompt de Comando* / *PowerShell*, utilize `mvnw.bat spring-boot:run` ou execute diretamente pela sua IDE).
-
 
 
 ## 🗄️ 3. Acesso ao Banco de Dados (H2 Console)
@@ -85,7 +76,8 @@ Com a aplicação em execução, é possível testar e interagir com todos os en
 
 ## 📌 5. Endpoints da API (CRUD)
 
-A tabela abaixo resume os principais endpoints disponibilizados pela API para o gerenciamento de ocorrências:
+Abaixo estão os principais endpoints disponibilizados pela API para o gerenciamento de ocorrências junto ás evidências de execução:
+
 ### 🟢 5.1 Cadastrar Ocorrência (`POST /ocorrencias`)
 Cadastra uma nova ocorrência no sistema.
 ```json
